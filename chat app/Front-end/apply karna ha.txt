@@ -1,0 +1,19 @@
+
+Profile and Avatar Upload:
+This is implemented well. Users can upload avatars, and the uploaded avatar is displayed on the profile page. However, the avatar needs to be displayed alongside user messages in the chat history.
+
+Suggestions:
+Extend the chat message UI to display the avatar next to the user's messages.
+
+also Frontend Code: Group Management:
+Group and channel management are mostly implemented. Ensure that the group and channel data are being fetched properly from MongoDB.
+Sockets will be used to support chat communication in a channel. When the user logs in they 
+can choose from the list of groups they are in. They can then choose a particular channel to 
+communicate in. When they are in a channel the chat history should be updated as users send 
+messages. The channel should also be shown in realtime when users join and leave a 
+channel.
+Backend Code:
+MongoDB Usage:
+
+in back-end is using MongoDB, but make sure that you’re retrieving chat history from the database instead of relying solely on in-memory data during active sessions. This would allow for persistent chat history.
+Ensure chat history, users, and groups are stored in MongoDB. 
